@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sertifikat Jtr</title>
-    <link rel="icon" type="image/x-icon" href="semar.ico"> 
+    <title>Sertifikat KKG Jatiroto</title>
+    <link rel="icon" type="image/x-icon" href="semar.ico">
     <style>
-        /* Membuat iframe mengisi seluruh halaman tanpa scrollbar */
         body, html {
             margin: 0;
             padding: 0;
@@ -15,13 +14,17 @@
         }
         iframe {
             width: 100%;
-            height: 100%;
+            height: 100dvh;
             border: none;
+            display: block;
         }
     </style>
 </head>
 <body>
-<iframe
-    src="https://script.google.com/macros/s/AKfycby9z0hencLBwOJe0j24pgPDV8ZBrs_bP2u34LPjEkMPhg7Gg8dKqsCV1qaFNoU88e9-ew/exec"></iframe>
+    <iframe id="gas-frame" title="Portal Sertifikat KKG Jatiroto"></iframe>
+    <script>
+        const baseUrl = "https://script.google.com/macros/s/AKfycby9z0hencLBwOJe0j24pgPDV8ZBrs_bP2u34LPjEkMPhg7Gg8dKqsCV1qaFNoU88e9-ew/exec";
+        document.getElementById("gas-frame").src = baseUrl + window.location.search;
+    </script>
 </body>
 </html>
